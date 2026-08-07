@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唐佳强 - 高级全栈工程师简历</title>
+    <style>
+        /* 基础重置与打印样式 - 仿陈云帆简历风格 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
+            background-color: #fff;
+            color: #222;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px 50px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-radius: 6px;
+        }
+        /* 头部信息 */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 28px;
+            color: #333;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        .header .contact-info {
+            font-size: 14px;
+            color: #555;
+            text-align: right;
+        }
+        .header .contact-info span {
+            display: block;
+            margin-bottom: 4px;
+        }
+        /* 标题样式 */
+        h2 {
+            font-size: 17px;
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+            margin: 20px 0 12px 0;
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 15px;
+            color: #333;
+            margin: 12px 0 4px 0;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+        }
+        h3 .sub {
+            font-weight: normal;
+            font-size: 13px;
+            color: #7f8c8d;
+        }
+        /* 列表与正文 */
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 6px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        ul li::before {
+            content: "-";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .summary {
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .highlight {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .tag {
+            display: inline-block;
+            background: #f1f3f5;
+            color: #333;
+            padding: 0px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 2px;
+            font-weight: 500;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 20px;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .ref-link {
+            color: #3498db;
+            text-decoration: none;
+            border-bottom: 1px dashed #3498db;
+        }
+        /* 打印适配 */
+        @media print {
+            body { background: #fff; padding: 0; }
+            .container { box-shadow: none; border-radius: 0; padding: 30px; max-width: 100%; }
+            .ref-link { border-bottom: none; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- 头部 -->
+    <div class="header">
+        <h1>唐佳强</h1>
+        <div class="contact-info">
+            <span>📞 15808440294</span>
+            <span>✉️ tangtaue0826@163.com</span>
+            <span>📍 深圳 | 6年工作经验 | 高级全栈 / AI应用架构师</span>
+        </div>
+    </div>
+
+    <!-- 基本信息 -->
+    <div class="info-grid">
+        <div><b>基本信息：</b>男 / 全日制本科</div>
+        <div><b>毕业院校：</b>成都大学 - 计算机科学与技术</div>
+    </div>
+
+    <!-- 专业技能 -->
+    <h2>专业技能</h2>
+    <ul>
+        <li><span class="highlight">前端与微前端架构：</span>精通 React、Vue、TypeScript 生态；熟练使用 Next.js，掌握 SSR、CSR、SSG 渲染模式；具备 Module Federation、qiankun 微前端架构从 0 到 1 的落地经验。</li>
+        <li><span class="highlight">后端与微服务：</span>擅长 Node.js、NestJS 框架及 Python、Go、Java 语言；熟悉 Redis、BullMQ 消息队列、gRPC 微服务调用，有 MySQL/PostgreSQL 数据库生产级设计与优化经验。</li>
+        <li><span class="highlight">AI Agent 与 RAG：</span>熟悉 LangChain、LangGraph、LlamaIndex 框架；掌握 PGVector 向量数据库及 RAG 检索增强生成知识库开发；熟练使用 Cursor、Claude Code 等 AI 工具进行 Verb Coding。</li>
+        <li><span class="highlight">GIS 与可视化：</span>精通高德地图 API、Cesium、Mapbox 等 GIS 引擎开发；熟悉 WebGL/Canvas/WebGPU 底层渲染，有三维场景与大屏可视化项目经验。</li>
+        <li><span class="highlight">工程化与基础设施：</span>具备第三方组件库、SDK 的封装与 Monorepo 仓库搭建经验；熟悉 Docker、K8s 容器化编排及 CI/CD 自动化部署流程。</li>
+    </ul>
+
+    <!-- 工作经历（按时间从后往前：从最早到最新） -->
+    <h2>工作经历</h2>
+
+    <h3>四川易利数字城市科技有限公司 <span class="sub">前端工程师 | 2020.06 - 2022.03</span></h3>
+    <ul>
+        <li>负责智慧城市类三维可视化大屏开发，基于 <b>高德地图 API、Cesium、Mapbox</b> 进行二三维地图渲染，处理 GLB、GeoJSON 等空间数据。</li>
+        <li>基于 <b>Node.js/Koa</b> 搭建 WebSocket 网关服务，实现海量物联网数据在 GIS 地图上的实时推送与渲染。</li>
+    </ul>
+
+    <h3>北京字节跳动科技有限公司 <span class="sub">前端 | 2022.03 - 2023.05</span></h3>
+    <ul>
+        <li>主导低代码配置平台的全链路研发，后端采用 <b>Java Spring Boot</b> 提供底层接口，前端实现 React/Vue 双技术栈协同。</li>
+        <li><span class="highlight">微前端架构实践</span>：在企业级项目中落地 <b>Module Federation</b> 和 <b>qiankun</b>，实现多系统无缝集成与历史遗留系统平滑升级。</li>
+        <li>负责底层 <b>组件库与 SDK 封装</b> 及发布。使用 <b>Rspack</b> 重构构建工具，优化构建缓存与分包策略，<b>实现项目启动速度提升 50%，构建体积缩减 30%</b>。</li>
+    </ul>
+
+    <h3>百度 - YY <span class="sub">高级前端 | 2023.05 - 2025.01</span></h3>
+    <ul>
+        <li>负责 C 端活动快配系统研发，基于 <b>Node.js / NestJS</b> 搭建后端微服务网关，配合 <b>Redis</b> 与 <b>BullMQ</b> 消息队列实现高并发下的任务调度，打通从设计稿到活动页面的全链路自动化生成。</li>
+        <li><span class="highlight">企业级 AI Agent 落地</span>：基于 <b>LangChain、LangGraph、LlamaIndex</b> 框架，结合 <b>PGVector</b> 向量数据库，落地内部知识库问答 Agent。深度应用 ReAct、Function Call 机制完成业务数据查询与多插件智能交互。</li>
+        <li><span class="highlight">AI 驱动研发实践</span>：深度使用 <b>Cursor、Claude Code、Copilot</b> 等 AI 辅助开发工具，全面融入 Verb Coding 开发范式，显著提升代码生成、重构与疑难问题排查效率。</li>
+        <li>维护团队 WebGL/WebGPU 底层渲染库与 Cesium/Mapbox 可视化引擎，推进复杂地图业务的快速迭代。</li>
+    </ul>
+
+    <h3>喜茶企业管理有限公司 <span class="sub">高级前端/全栈工程师 | 2025.02 - 至今</span></h3>
+    <ul>
+        <li>主导中后台系统与低代码配置平台的研发。深入对接 <b>宜搭低代码平台</b>，设计并实现 <b>画布渲染引擎</b>，支持数据字段统计落地数据库，打通从配置到 <b>一站式前后端代码生成与联调</b> 的全链路。</li>
+        <li>基于 <b>Node.js BFF</b> 架构设计对接宜搭底层系统字段，独立承担 <b>审批流</b> 与 <b>工作流引擎</b> 的配置化渲染与数据驱动流转。</li>
+        <li>在业务场景中集成 <b>AI 对话能力</b>，结合 <b>Prompt Engineering</b>、<b>Tools</b>、<b>Memory</b> 与 <b>RAG</b> 技术，为业务方提供智能化交互体验。</li>
+    </ul>
+
+    <!-- 核心项目经历 -->
+    <h2>核心项目经历</h2>
+
+    <h3>网规大数据选址平台 <span class="sub">(高德地图 + Canvas + React)</span></h3>
+    <ul>
+        <li><span class="highlight">多图层集成与交互：</span>基于高德地图 JS API 2.0 设计并实现多业务图层体系，集成小区房价、交通路网、商圈客流量、外卖订单等多维数据图层，支持按需叠加、显隐控制与聚合分析，满足了复杂商业选址场景的空间计算需求。</li>
+        <li><span class="highlight">10万+级海量数据性能优化：</span>针对 10 万级以上的海量空间数据，通过多级缩放层级的<b>数据聚合</b>、可视区域动态裁剪及渲染缓存等策略，攻克了地图在快速<b>缩放、平移</b>时的数据加载延迟与渲染卡顿瓶颈，实现了大规模数据的平滑渲染与即时交互。</li>
+        <li><span class="highlight">地图控制与复杂交互：</span>设计并封装统一的地图事件管理机制（Click/Hover/Move），支持高频事件调度；实现了多边形交集计算、多图层联动等高阶交互，并突破高德原生覆盖物限制，自主实现基于 Canvas 的定制化地图组件渲染引擎，精准绘制复杂业务边界与可视化元素。</li>
+    </ul>
+
+    <h3>全栈微服务与微前端企业级中后台 <span class="sub">(React/Vue + Spring Boot + NestJS)</span></h3>
+    <ul>
+        <li>采用 <b>pnpm monorepo</b> 管理多端工程，集成 <b>NestJS</b> 作为 BFF 层对接 <b>Java Spring Boot</b> 微服务集群，引入 <b>gRPC</b> 实现跨服务的高效 RPC 通信。</li>
+        <li>利用 <b>Redis</b> 做分布式缓存，引入 <b>BullMQ</b> 异步处理复杂任务（如数据报表生成、批量消息推送）。</li>
+        <li>前端使用 <b>Module Federation</b> 实现跨技术栈（React/Vue）的微前端集成，大幅降低重构成本。</li>
+    </ul>
+
+    <h3>AI Agent 智能助手与 RAG 知识库系统 <span class="sub">(Python FastAPI + LangChain + PGVector)</span></h3>
+    <ul>
+        <li>基于 <b>LangChain</b> 和 <b>LangGraph</b> 搭建多轮对话 Agent，利用 <b>Prompt Engineering</b> 和 <b>Function Call</b> 实现对内部 API 的智能调用与多步骤任务编排。</li>
+        <li>基于 <b>LlamaIndex</b> 框架和 <b>PGVector</b> 向量数据库构建 RAG 知识库，大幅提升大模型回答的准确率与业务结合度。</li>
+        <li>搭建生产级后端接口，支持 <b>Docker</b> 容器化部署与 <b>K8s</b> 编排，确保推理服务的高可用。</li>
+    </ul>
+
+    <h3>C端活动快配与 AI 低代码生成平台 <span class="sub">(Next.js + Node.js + 大模型 API)</span></h3>
+    <ul>
+        <li>基于 <b>Next.js</b> 搭建混合渲染架构，结合 SSR 优化首屏加载性能与 SEO。</li>
+        <li>集成 LLM 大模型实现设计图（Figma）到代码配置的转换，利用 AI 自动生成配置化 JSON，实现组件预览与一键发布，大幅缩减活动页制作周期。</li>
+        <li>基于 <b>Docker + K8s</b> 构建完整的 <b>CI/CD</b> 流水线，实现代码提交、镜像构建到生产环境的自动化部署。</li>
+    </ul>
+
+    <!-- 个人案例与开源 -->
+    <h2>个人案例与开源</h2>
+
+    <h3>AI Agent 全栈应用框架 (agent_mono) <span class="sub">(个人开源 / 架构验证)</span></h3>
+    <ul>
+        <li><span class="highlight">项目定位：</span>这是一套面向企业级落地的 AI Agent 全栈架构最佳实践，将完整的 AI 认知流程与工程化全栈体系完全耦合。
+        <br><span style="font-size: 13px; color: #666; margin-left: 15px;">📎 开源地址：<a href="https://github.com/TaueFenCheng/agent_mono" target="_blank" class="ref-link">https://github.com/TaueFenCheng/agent_mono</a></span></li>
+        <li><span class="highlight">AI 编排与 Agent：</span>基于 LangChain、LangGraph 构建 ReAct 多轮对话，深度集成 Tool Calling、MCP 协议、短期及长期 Memory 记忆管理，以及基于 LlamaIndex 的 RAG 检索增强知识库。</li>
+        <li><span class="highlight">后端与网关：</span>采用 NestJS 作为主 BFF 网关，Python (FastAPI) 运行推理计算服务，通过 gRPC/REST 接口通信；引入 BullMQ + Redis 处理高并发任务调度与排队。</li>
+        <li><span class="highlight">前端与展示：</span>基于 React、Next.js 搭建 SSG/CSR 混合渲染体验；使用 TailwindCSS 与 Zustand 构建高交互 UI 与全局状态管理。</li>
+        <li><span class="highlight">存储与基础设施：</span>使用 PostgreSQL 配合 PGVector 插件存储业务表与向量数据。结合 Docker、K8s 进行容器化编排，并完成 GitHub Actions 自动化 CI/CD 流水线部署。</li>
+        <li><span class="highlight">AI 驱动开发：</span>整个项目底层深度集成了 Cursor、Claude Code 等 AI 辅助工具，采用 AI-Native 的 Verb Coding 开发范式进行快速构建与工程重构。</li>
+    </ul>
+
+    <ul style="margin-top: 12px;">
+        <li><span class="highlight">开源社区贡献：</span>曾向 <b>Ant Design</b> 和 React 生态组件库提交过 PR，积极参与前端社区建设与技术分享。</li>
+        <li><span class="highlight">企业级工程化基建：</span>独立设计并实现基于 Monorepo 架构的底层工具链，编写交互式发包 CLI 工具，支撑团队内部多包的高效发布与管理。</li>
+    </ul>
+
+</div>
+</body>
+</html>
