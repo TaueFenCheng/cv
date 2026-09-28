@@ -130,6 +130,7 @@
                 <li>参与企业内部多个运营中后台系统的开发与维护，持续推进系统架构升级、公共能力治理和存量模块优化。</li>
                 <li>推动构建体系从 Webpack 迁移至 Rsbuild，优化开发启动、增量构建与热更新流程：dev 冷启动由约 <span class="metric">11s 降至 1s 以内</span>，完整生产构建由约 <span class="metric">40s 降至 9s 左右</span>（同机、清缓存后对比，dev 口径为全量路由编译完成）。</li>
                 <li>基于 React、TypeScript、Tailwind CSS 与 shadcn/ui 沉淀通用组件和页面规范，提升多后台系统的界面一致性与代码复用率。</li>
+                <li>面向内部原子组件库开发 MCP 服务与配套 Skills，将组件检索、用法示例及使用规范封装为 Agent 可调用能力，辅助生成符合团队规范的页面代码，减少组件查找与重复拼装成本，提升团队开发效率。</li>
                 <li>参与多个 Node.js/NestJS 微服务的维护与开发，覆盖服务接口、定时任务、消息队列及异步业务流程。</li>
                 <li>担任网规大数据 WebGIS 平台主程开发，负责地图交互、海量数据渲染、架构设计与性能优化。</li>
                 <li>独立设计并实现审批流消息通知系统（NestJS + RabbitMQ + Redis）：统一封装钉钉、邮箱、企业微信等多渠道异步发送接口，采用主消息 + 渠道子消息的两层队列与两表模型，削峰填谷并隔离各渠道发送压力与故障。</li>
@@ -203,7 +204,18 @@
         </article>
 
         <article class="block">
-            <h3>3. 统一中后台体系：商家端与内部系统 <span class="stack">React / Vue · Rspack · Module Federation · Monorepo · 微前端</span></h3>
+            <h3>3. 网规大数据 WebGIS 平台（主程开发） <span class="stack">React · TypeScript · Zustand · IndexedDB · Web Worker · GIS</span></h3>
+            <ul>
+                <li>担任项目主程，负责地图模块架构设计与核心功能研发，支持多图层管理、地图事件交互、海量点位及 Marker 渲染。</li>
+                <li>使用 Zustand 按地图、图层、点位等业务领域拆分 Store，降低全局状态耦合并提升状态维护效率。</li>
+                <li>基于发布订阅模式解耦地图实例与业务组件，实现图层、点位、筛选条件及交互事件之间的灵活通信与联动。</li>
+                <li>结合 IndexedDB 缓存大规模地图数据，并使用 Web Worker 承担数据计算与转换任务，降低主线程压力和页面内存占用。</li>
+                <li>优化热力图的数据聚合、计算与渲染流程，改善大数据量场景下的地图响应速度和交互流畅度。</li>
+            </ul>
+        </article>
+
+        <article class="block">
+            <h3>4. 统一中后台体系：商家端与内部系统 <span class="stack">React / Vue · Rspack · Module Federation · Monorepo · 微前端</span></h3>
             <ul>
                 <li>服务于商家端、内部系统及对外平台，覆盖 B 端业务管理与部分 C 端运维，通过线索/流量数据驱动商业化。</li>
                 <li>SchemaForm 配置体系：采用 Schema 驱动 Search/Table/Modal 表单，封装 20+ 基础组件，Vitest 单元测试覆盖率 &gt;90%，提效 60%+。</li>
@@ -217,25 +229,6 @@
             </ul>
         </article>
 
-        <article class="block">
-            <h3>4. 网规大数据 WebGIS 平台（主程开发） <span class="stack">React · TypeScript · Zustand · IndexedDB · Web Worker · GIS</span></h3>
-            <ul>
-                <li>担任项目主程，负责地图模块架构设计与核心功能研发，支持多图层管理、地图事件交互、海量点位及 Marker 渲染。</li>
-                <li>使用 Zustand 按地图、图层、点位等业务领域拆分 Store，降低全局状态耦合并提升状态维护效率。</li>
-                <li>基于发布订阅模式解耦地图实例与业务组件，实现图层、点位、筛选条件及交互事件之间的灵活通信与联动。</li>
-                <li>结合 IndexedDB 缓存大规模地图数据，并使用 Web Worker 承担数据计算与转换任务，降低主线程压力和页面内存占用。</li>
-                <li>优化热力图的数据聚合、计算与渲染流程，改善大数据量场景下的地图响应速度和交互流畅度。</li>
-            </ul>
-        </article>
-
-        <article class="block">
-            <h3>5. Figma to Code 与低代码平台 <span class="stack">Next.js · React · TypeScript · Figma Dev Mode · Monorepo</span></h3>
-            <ul>
-                <li>基于 Next.js 与 React 研发低代码平台，支持 Figma Dev Mode 设计稿解析、页面配置与代码生成。</li>
-                <li>通过模板化配置与动态渲染，将单页开发周期从 2 天缩短至 2 小时，交付耗时降低约 87.5%。</li>
-                <li>使用 Monorepo 统一多端代码管理，支撑跨端复用。</li>
-            </ul>
-        </article>
     </section>
 
     <section>
